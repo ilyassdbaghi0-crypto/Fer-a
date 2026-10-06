@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Produit — Feréa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="promo-bar">
+  <span class="promo-text">−15% sur votre 1ère commande dès 25€</span>
+  <span class="promo-code">BIENVENUE15</span>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo" aria-label="Feréa, accueil">Feréa<small>Your skin, your ritual</small></a>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li class="has-menu">
+          <a href="produits.html">Nos produits</a>
+          <div class="mega">
+            <div class="mega-in">
+              <a href="produit.html?id=1" class="mi"><span class="mi-img" style="background:#f3d9d6"></span>Masques tissu aux fruits</a>
+              <a href="produit.html?id=2" class="mi"><span class="mi-img" style="background:#f6d2d3"></span>PDRN Pink Collagen</a>
+              <a href="produit.html?id=3" class="mi"><span class="mi-img" style="background:#f6edbd"></span>Kojic Acid Turmeric</a>
+              <a href="produit.html?id=4" class="mi"><span class="mi-img" style="background:#f0cfe0"></span>Coffret Avocat Hyaluronique</a>
+              <a href="produit.html?id=5" class="mi"><span class="mi-img" style="background:#e9b3b0"></span>Gamme Rose</a>
+              <a href="produit.html?id=6" class="mi"><span class="mi-img" style="background:#ecd0d2"></span>Coffret Plum Flower</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="produit.html?id=4" class="sale">Promotions</a></li>
+        <li><a href="index.html#marque">Notre marque</a></li>
+        <li><a href="index.html#newsletter">Newsletter</a></li>
+      </ul>
+    </nav>
+    <div class="icons">
+      <button aria-label="Rechercher"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
+      <button aria-label="Panier" id="openCart"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span class="count" id="count">0</span></button>
+      <button class="burger" aria-label="Menu" id="openMenu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="veil" id="veil"></div>
+<aside class="mmenu" id="mmenu" aria-label="Menu mobile">
+  <button class="close" id="closeMenu" aria-label="Fermer">×</button>
+  <a href="produits.html">Nos produits</a>
+  <a href="produit.html?id=4">Promotions</a>
+  <a href="index.html#marque">Notre marque</a>
+  <a href="index.html#newsletter">Newsletter</a>
+</aside>
+
+<aside class="drawer" id="drawer" aria-label="Panier">
+  <header><h3>Votre panier</h3><button class="close" id="closeCart" aria-label="Fermer">×</button></header>
+  <div id="items"></div>
+  <div class="dfoot">
+    <div class="tot"><span>Total</span><span id="total">0,00 €</span></div>
+    <small>Livraison calculée à l'étape suivante.</small>
+    <a href="#" class="btn">Commander</a>
+  </div>
+</aside>
+
+<main>
+  <section style="padding:0 0 72px"><div id="product"></div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a href="index.html" class="logo">Feréa</a><p style="margin-top:12px;color:var(--taupe);max-width:300px">Your skin, your ritual.</p></div>
+      <div><h4>Boutique</h4><ul><li><a href="produits.html">Nos produits</a></li><li><a href="produit.html?id=4">Promotions</a></li><li><a href="index.html#marque">Notre marque</a></li></ul></div>
+      <div><h4>Aide</h4><ul><li><a href="#">Livraison</a></li><li><a href="#">Retours</a></li><li><a href="#">Contact</a></li><li><a href="#">FAQ</a></li></ul></div>
+      <div><h4>Légal</h4><ul><li><a href="#">Mentions légales</a></li><li><a href="#">CGV</a></li><li><a href="#">Confidentialité</a></li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 Feréa. Tous droits réservés.</span><span>Paiement sécurisé · Livraison en France</span></div>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

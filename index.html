@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feréa — Your skin, your ritual</title>
+<meta name="description" content="Feréa : masques, soins et coffrets pour faire de chaque geste un rituel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="promo-bar">
+  <span class="promo-text">−15% sur votre 1ère commande dès 25€</span>
+  <span class="promo-code">BIENVENUE15</span>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo" aria-label="Feréa, accueil">Feréa<small>Your skin, your ritual</small></a>
+    <nav aria-label="Navigation principale">
+      <ul>
+<li class="has-menu">
+  <a href="produits.html">Nos produits</a>
+  <div class="mega">
+    <div class="mega-in">
+      <a href="produit.html?id=1" class="mi"><span class="mi-img" style="background:#f3d9d6"></span>Masques tissu aux fruits</a>
+      <a href="produit.html?id=2" class="mi"><span class="mi-img" style="background:#f6d2d3"></span>PDRN Pink Collagen</a>
+      <a href="produit.html?id=3" class="mi"><span class="mi-img" style="background:#f6edbd"></span>Kojic Acid Turmeric</a>
+      <a href="produit.html?id=4" class="mi"><span class="mi-img" style="background:#f0cfe0"></span>Coffret Avocat Hyaluronique</a>
+      <a href="produit.html?id=5" class="mi"><span class="mi-img" style="background:#e9b3b0"></span>Gamme Rose</a>
+      <a href="produit.html?id=6" class="mi"><span class="mi-img" style="background:#ecd0d2"></span>Coffret Plum Flower</a>
+    </div>
+  </div>
+</li>
+        <li><a href="#produit-4" class="sale">Promotions</a></li>
+        <li><a href="#marque">Notre marque</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+      </ul>
+    </nav>
+    <div class="icons">
+      <button aria-label="Rechercher"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
+      <button aria-label="Panier" id="openCart"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span class="count" id="count">0</span></button>
+      <button class="burger" aria-label="Menu" id="openMenu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="veil" id="veil"></div>
+<aside class="mmenu" id="mmenu" aria-label="Menu mobile">
+  <button class="close" id="closeMenu" aria-label="Fermer">×</button>
+  <a href="#produits">NOS PRODUITS</a>
+  <a href="#produit-4" class="sale">PROMOTIONS</a>
+  <a href="#marque">NOTRE MARQUE</a>
+  <a href="#newsletter">NEWSLETTER</a>
+</aside>
+
+<aside class="drawer" id="drawer" aria-label="Panier">
+  <header><h3>Votre panier</h3><button class="close" id="closeCart" aria-label="Fermer">×</button></header>
+  <div id="items"></div>
+  <div class="dfoot">
+    <div class="tot"><span>Total</span><span id="total">0,00 €</span></div>
+    <small>Livraison calculée à l'étape suivante.</small>
+    <a href="#" class="btn">Commander</a>
+  </div>
+</aside>
+
+<main>
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"></span>
+      <h1>Le rituel qui <em>révèle</em> votre peau</h1>
+      <p>Masque gel PDRN Pink Collagen : hydratation intense, peau repulpée et lumineuse dès la première application.</p>
+      <a href="#produits" class="btn">JE DÉCOUVRE</a>
+    </div>
+    <div class="visual" role="img" aria-label="Masque gel PDRN Pink Collagen">
+      <div class="sheet"></div>
+      <div class="pack"><span>Gel mask</span><b>PDRN Pink<br>Collagen</b><span>Niacinamide · Collagène</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="categories">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow"></span><h2>NOS UNIVERS</h2></div>
+    <div class="cats">
+      <a href="produits.html?cat=masques" class="cat" style="background:#E8C9C8">Masques</a>
+      <a href="produits.html?cat=coffrets" class="cat" style="background:#eadbd6">Coffrets soin</a>
+      <a href="produits.html?cat=corps" class="cat" style="background:#dccac4">Corps</a>
+    </div>
+  </div>
+</section>
+
+<section id="produits" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow"></span><h2>NOS PRODUITS</h2></div>
+    <div class="grid" id="grid"></div>
+      <div style="text-align:center;margin-top:44px"><a href="produits.html" class="btn light">Voir tous les produits</a></div>
+  </div>
+</section>
+
+<section class="band" id="promotions">
+  <span class="eyebrow"></span>
+  <h2>−20 % sur votre prochaine commande</h2>
+  <p>Inscrivez-vous à la newsletter et recevez votre code.</p>
+  <a href="#newsletter" class="btn light">Je m'inscris</a>
+</section>
+
+<section class="brand" id="marque">
+  <div class="wrap">
+    <div class="pic"><img src="images/logo-ferea.png" alt="Feréa"></div>
+    <div>
+      <span class="eyebrow">Notre marque</span>
+      <h2>Prendre soin de soi, un geste à la fois</h2>
+      <p>Feréa est née d'une conviction : chaque peau est unique, et chaque soin peut devenir un moment pour soi.</p>
+      <p>Nous sélectionnons des formules efficaces et des textures sensorielles pour transformer votre routine en véritable rituel.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap values">
+    <div><svg viewBox="0 0 24 24"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11Z"/></svg><h3>Hydratation</h3><p>Des actifs reconnus pour une peau souple et confortable.</p></div>
+    <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg><h3>Éclat</h3><p>Un teint plus uniforme et lumineux au fil des rituels.</p></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11Z"/></svg><h3>Plaisir</h3><p>Des textures et des parfums pensés pour se faire du bien.</p></div>
+  </div>
+</section>
+
+<section class="news" id="newsletter">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--rose)"></span>
+    <h2>−20 % sur votre prochaine commande</h2>
+    <p>Inscrivez-vous à la newsletter et recevez votre code.</p>
+    <form id="nl">
+      <input type="email" required placeholder="Votre adresse e-mail" aria-label="E-mail">
+      <button class="btn" type="submit">S'inscrire</button>
+    </form>
+    <div class="ok" id="ok"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a href="#" class="logo">Feréa</a><p style="margin-top:12px;color:var(--taupe);max-width:300px">Your skin, your ritual.</p></div>
+      <div><h4>Boutique</h4><ul><li><a href="#produits">Nos produits</a></li><li><a href="#produit-4">Promotions</a></li><li><a href="#marque">Notre marque</a></li></ul></div>
+      <div><h4>Aide</h4><ul><li><a href="#">Livraison</a></li><li><a href="#">Retours</a></li><li><a href="#">Contact</a></li><li><a href="#">FAQ</a></li></ul></div>
+      <div><h4>Légal</h4><ul><li><a href="#">Mentions légales</a></li><li><a href="#">CGV</a></li><li><a href="#">Confidentialité</a></li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 Feréa. Tous droits réservés.</span><span>Paiement sécurisé · Livraison en France</span></div>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
